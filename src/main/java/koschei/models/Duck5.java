@@ -7,13 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Duck5 {
 
-    private Egg6 egg;
 
     @Autowired
-    public Duck5 (@Qualifier("egg6") Egg6 egg) {
+    @Qualifier("getEgg")
+    private Egg6 egg;
 
-        this.egg = egg;
-    }
 
     @Override
     public String toString() {

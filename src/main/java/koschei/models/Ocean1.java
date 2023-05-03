@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 public class Ocean1 {
 
 
-    @Qualifier("island2")
     @Autowired
     private Island2 island;
 
